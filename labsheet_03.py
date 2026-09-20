@@ -1,18 +1,4 @@
-# # Regression Models — Complete Program List
-# **Experiments 1–35**: Simple Linear Regression, Multiple Linear Regression,
-# Polynomial Regression, Model Evaluation, and Model Improvement.
-# 
-# **Dataset used (primary):** `Diabetes` dataset (built into scikit-learn,
-# loaded directly — no file upload/internet download needed). It contains 10
-# baseline physiological measurements for 442 diabetes patients and a
-# quantitative measure of disease progression one year after baseline
-# (the target).
-# **Dataset used (Exp. 33, another real-world dataset):** `Linnerud` dataset
-# (also built into scikit-learn) — physiological and exercise measurements
-# from a fitness club.
-# 
-
-# Common imports used throughout the notebook
+ # Common imports used throughout the notebook
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -437,15 +423,3 @@ result_df = pd.DataFrame({
     'Predicted (Loaded Model)': loaded_predictions
 })
 result_df
-
-
-# ## Summary
-# 
-# This notebook implemented and evaluated:
-# - **Simple Linear Regression** (single feature)
-# - **Multiple Linear Regression** (all features)
-# - **Polynomial Regression** (degree 2, 3, and a degree sweep 1–5)
-# - **Evaluation metrics**: MAE, MSE, RMSE, R²
-# - **Model improvement**: feature scaling, a second real-world dataset, and
-#   model persistence with Joblib.
-# 
